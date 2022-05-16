@@ -1,6 +1,56 @@
 .App {
   text-align: center;
+  font-size: 150%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-style: italic;
+  color: yellow;
+  
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Starships {
+  position:relative;
+  font-family:'Cyberspace-Raceway-Back',sans-serif;
+  font-size:4rem;
+  color:black;
+  -webkit-clip:background;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:yellow;
+  -webkit-text-stroke-width: 0.1rem;
+   -webkit-text-stroke-color: rgba(135,209,228,1); 
+  filter:url(#extrude);
+}
+
+
+body {
+  background:radial-gradient(#050526 0%,black 90%) -20vw 10vh no-repeat black;
+  margin:0;
+  padding:0;
+  width:100vw;
+  height:100vh;
+  position:absolute;  
+  perspective: 340px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ship {
+  flex-direction: column;
+  box-shadow: inset 0px 0px 0px 3px lightblue;
+  justify-content: space-between;
+  display: flex;
+  width: 35%;
+  height: 10%;
+  padding: 20px;
+  
+}
+
 
 .App-logo {
   height: 40vmin;
